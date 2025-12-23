@@ -32,9 +32,9 @@ O sistema simula um **sorteio promocional** realizado pela empresa **TAIF** para
 - ├── Data
 - │ ├── Database.pas
 - │ └── Repositories
-- │ ├── ClienteRepository.pas
-- │ ├── ModeloRepository.pas
-- │ └── VendaRepository.pas
+- │- ├── ClienteRepository.pas
+- │- ├── ModeloRepository.pas
+- │- └── VendaRepository.pas
 - │
 - ├── Services
 - │ ├── CadastroService.pas
