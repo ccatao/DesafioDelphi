@@ -183,12 +183,12 @@
         <DCCReference Include="Domain\Modelo.pas"/>
         <DCCReference Include="Domain\Venda.pas"/>
         <DCCReference Include="Data\Database.pas"/>
-        <DCCReference Include="Data\ClienteRepository.pas"/>
-        <DCCReference Include="Data\ModeloRepository.pas"/>
-        <DCCReference Include="Data\VendaRepository.pas"/>
         <DCCReference Include="Services\CadastroService.pas"/>
         <DCCReference Include="Services\SorteioService.pas"/>
         <DCCReference Include="Services\VendaService.pas"/>
+        <DCCReference Include="Data\Repositories\ClienteRepository.pas"/>
+        <DCCReference Include="Data\Repositories\ModeloRepository.pas"/>
+        <DCCReference Include="Data\Repositories\VendaRepository.pas"/>
         <None Include="SQL_Tabelas.txt"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

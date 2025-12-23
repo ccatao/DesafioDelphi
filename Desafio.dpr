@@ -16,12 +16,12 @@ uses
   Modelo in 'Domain\Modelo.pas',
   Venda in 'Domain\Venda.pas',
   Database in 'Data\Database.pas',
-  ClienteRepository in 'Data\ClienteRepository.pas',
-  ModeloRepository in 'Data\ModeloRepository.pas',
-  VendaRepository in 'Data\VendaRepository.pas',
   CadastroService in 'Services\CadastroService.pas',
   SorteioService in 'Services\SorteioService.pas',
-  VendaService in 'Services\VendaService.pas';
+  VendaService in 'Services\VendaService.pas',
+  ClienteRepository in 'Data\Repositories\ClienteRepository.pas',
+  ModeloRepository in 'Data\Repositories\ModeloRepository.pas',
+  VendaRepository in 'Data\Repositories\VendaRepository.pas';
 
 var
   Cadastro: TCadastroService;
