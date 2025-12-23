@@ -1,0 +1,23 @@
+CREATE TABLE Clientes (
+    IdCliente INT IDENTITY PRIMARY KEY,
+    Nome       VARCHAR(100) NOT NULL,
+    CPF        CHAR(11) NOT NULL,
+    DataCadastro DATE NOT NULL
+);
+
+CREATE TABLE Modelos (
+    IdModelo INT IDENTITY PRIMARY KEY,
+    NomeModelo VARCHAR(50) NOT NULL,
+    DataLancamento DATE NOT NULL
+);
+
+CREATE TABLE Vendas (
+    IdVenda INT IDENTITY PRIMARY KEY,
+    IdCliente INT NOT NULL,
+    IdModelo  INT NOT NULL,
+    DataVenda DATE NOT NULL,
+    Valor     DECIMAL(10,2) NOT NULL,
+
+    CONSTRAINT FK_Venda_Cliente FOREIGN KEY (IdCliente) REFERENCES Clientes(IdCliente),
+    CONSTRAINT FK_Venda_Modelo  FOREIGN KEY (IdModelo)  REFERENCES Modelos(IdModelo)
+);
